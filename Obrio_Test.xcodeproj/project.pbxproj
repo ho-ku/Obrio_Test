@@ -18,6 +18,10 @@
 		37915936257C13D2002E6A35 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37915935257C13D2002E6A35 /* ListView.swift */; };
 		37915940257C1727002E6A35 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791593F257C1727002E6A35 /* Repo.swift */; };
 		37915944257C178A002E6A35 /* RepoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37915943257C178A002E6A35 /* RepoResponse.swift */; };
+		37915948257C19E3002E6A35 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37915947257C19E3002E6A35 /* ListVC.swift */; };
+		3791594C257C1C5E002E6A35 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791594B257C1C5E002E6A35 /* RequestService.swift */; };
+		37915950257C1CAB002E6A35 /* OBRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791594F257C1CAB002E6A35 /* OBRequestService.swift */; };
+		37915958257C22AA002E6A35 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37915957257C22AA002E6A35 /* DependencyInjection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		37915935257C13D2002E6A35 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		3791593F257C1727002E6A35 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		37915943257C178A002E6A35 /* RepoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoResponse.swift; sourceTree = "<group>"; };
+		37915947257C19E3002E6A35 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		3791594B257C1C5E002E6A35 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		3791594F257C1CAB002E6A35 /* OBRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBRequestService.swift; sourceTree = "<group>"; };
+		37915957257C22AA002E6A35 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		37915924257C1020002E6A35 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				37915947257C19E3002E6A35 /* ListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -115,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3791592A257C10CD002E6A35 /* Constants.swift */,
+				37915957257C22AA002E6A35 /* DependencyInjection.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -131,6 +141,7 @@
 		37915927257C1030002E6A35 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3791594A257C1C4C002E6A35 /* RequestService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -160,6 +171,15 @@
 				37915943257C178A002E6A35 /* RepoResponse.swift */,
 			);
 			path = Repo;
+			sourceTree = "<group>";
+		};
+		3791594A257C1C4C002E6A35 /* RequestService */ = {
+			isa = PBXGroup;
+			children = (
+				3791594B257C1C5E002E6A35 /* RequestService.swift */,
+				3791594F257C1CAB002E6A35 /* OBRequestService.swift */,
+			);
+			path = RequestService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,12 +253,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				37915940257C1727002E6A35 /* Repo.swift in Sources */,
+				37915958257C22AA002E6A35 /* DependencyInjection.swift in Sources */,
 				3791590C257C0EA0002E6A35 /* AppDelegate.swift in Sources */,
 				37915944257C178A002E6A35 /* RepoResponse.swift in Sources */,
+				37915948257C19E3002E6A35 /* ListVC.swift in Sources */,
 				3791590E257C0EA0002E6A35 /* SceneDelegate.swift in Sources */,
 				37915936257C13D2002E6A35 /* ListView.swift in Sources */,
 				3791592B257C10CD002E6A35 /* Constants.swift in Sources */,
+				3791594C257C1C5E002E6A35 /* RequestService.swift in Sources */,
 				37915932257C1345002E6A35 /* Color.swift in Sources */,
+				37915950257C1CAB002E6A35 /* OBRequestService.swift in Sources */,
 				3791592F257C116D002E6A35 /* RepoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

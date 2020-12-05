@@ -11,7 +11,7 @@ struct ListViewData {
     var repos: [Repo]
 }
 
-class ListView: UIView {
+final class ListView: UIView {
 
     // MARK: - IBOutlets
     @IBOutlet private weak var tableView: UITableView!
@@ -35,9 +35,10 @@ class ListView: UIView {
         tableView.tableHeaderView = searchController.searchBar
         searchController.searchBar.delegate = vc
         searchController.searchResultsUpdater = vc
+        searchController.obscuresBackgroundDuringPresentation = false
     }
     
-    func updateUI(viewData: ListViewData?) {
+    func updateUI(viewData: ListViewData? = nil) {
         if let data = viewData { self.viewData = data }
         tableView.reloadData()
     }

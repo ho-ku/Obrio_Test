@@ -12,7 +12,7 @@ struct CellData {
     var fullName: String
 }
 
-class RepoCell: UITableViewCell {
+final class RepoCell: UITableViewCell {
     
     // MARK: - IBOutlets
     @IBOutlet private weak var repoNameLabel: UILabel!

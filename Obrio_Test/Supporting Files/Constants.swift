@@ -9,4 +9,8 @@ import Foundation
 
 struct C {
     static let repoCellID = "RepoCellID"
+    static let reposSearchURLString = "https://api.github.com/search/repositories"
+    static let starsSortTitle = "stars"
+    static let descOrderTitle = "desc"
+    static let resultsLimit = 30
 }
