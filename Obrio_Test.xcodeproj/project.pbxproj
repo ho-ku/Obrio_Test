@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		3791590C257C0EA0002E6A35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791590B257C0EA0002E6A35 /* AppDelegate.swift */; };
 		3791590E257C0EA0002E6A35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791590D257C0EA0002E6A35 /* SceneDelegate.swift */; };
-		37915910257C0EA0002E6A35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791590F257C0EA0002E6A35 /* ViewController.swift */; };
 		37915913257C0EA0002E6A35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37915911257C0EA0002E6A35 /* Main.storyboard */; };
 		37915915257C0EA3002E6A35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37915914257C0EA3002E6A35 /* Assets.xcassets */; };
 		37915918257C0EA3002E6A35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37915916257C0EA3002E6A35 /* LaunchScreen.storyboard */; };
+		3791592B257C10CD002E6A35 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791592A257C10CD002E6A35 /* Constants.swift */; };
+		3791592F257C116D002E6A35 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791592E257C116D002E6A35 /* RepoCell.swift */; };
+		37915932257C1345002E6A35 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37915931257C1345002E6A35 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37915908257C0EA0002E6A35 /* Obrio_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obrio_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3791590B257C0EA0002E6A35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3791590D257C0EA0002E6A35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3791590F257C0EA0002E6A35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37915912257C0EA0002E6A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37915914257C0EA3002E6A35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37915917257C0EA3002E6A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37915919257C0EA3002E6A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3791592A257C10CD002E6A35 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3791592E257C116D002E6A35 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		37915931257C1345002E6A35 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,81 @@
 		3791590A257C0EA0002E6A35 /* Obrio_Test */ = {
 			isa = PBXGroup;
 			children = (
-				3791590B257C0EA0002E6A35 /* AppDelegate.swift */,
-				3791590D257C0EA0002E6A35 /* SceneDelegate.swift */,
-				3791590F257C0EA0002E6A35 /* ViewController.swift */,
-				37915911257C0EA0002E6A35 /* Main.storyboard */,
-				37915914257C0EA3002E6A35 /* Assets.xcassets */,
-				37915916257C0EA3002E6A35 /* LaunchScreen.storyboard */,
+				37915921257C100F002E6A35 /* AppDelegate */,
+				37915922257C101A002E6A35 /* Model */,
+				37915923257C101D002E6A35 /* View */,
+				37915924257C1020002E6A35 /* Controller */,
+				37915926257C102B002E6A35 /* Storyboards */,
+				37915928257C104B002E6A35 /* Resources */,
+				37915927257C1030002E6A35 /* Services */,
+				37915925257C1024002E6A35 /* Supporting Files */,
 				37915919257C0EA3002E6A35 /* Info.plist */,
 			);
 			path = Obrio_Test;
+			sourceTree = "<group>";
+		};
+		37915921257C100F002E6A35 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3791590B257C0EA0002E6A35 /* AppDelegate.swift */,
+				3791590D257C0EA0002E6A35 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		37915922257C101A002E6A35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37915923257C101D002E6A35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3791592E257C116D002E6A35 /* RepoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37915924257C1020002E6A35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37915925257C1024002E6A35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3791592A257C10CD002E6A35 /* Constants.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37915926257C102B002E6A35 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				37915911257C0EA0002E6A35 /* Main.storyboard */,
+				37915916257C0EA3002E6A35 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		37915927257C1030002E6A35 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		37915928257C104B002E6A35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37915914257C0EA3002E6A35 /* Assets.xcassets */,
+				37915931257C1345002E6A35 /* Color.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +207,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37915910257C0EA0002E6A35 /* ViewController.swift in Sources */,
 				3791590C257C0EA0002E6A35 /* AppDelegate.swift in Sources */,
 				3791590E257C0EA0002E6A35 /* SceneDelegate.swift in Sources */,
+				3791592B257C10CD002E6A35 /* Constants.swift in Sources */,
+				37915932257C1345002E6A35 /* Color.swift in Sources */,
+				3791592F257C116D002E6A35 /* RepoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
