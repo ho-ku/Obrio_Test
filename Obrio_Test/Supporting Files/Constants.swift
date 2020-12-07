@@ -12,5 +12,6 @@ struct C {
     static let reposSearchURLString = "https://api.github.com/search/repositories"
     static let starsSortTitle = "stars"
     static let descOrderTitle = "desc"
-    static let resultsLimit = 30
+    static let resultsFirstLimit = 15
+    static let resultsSecondLimit = 30
 }

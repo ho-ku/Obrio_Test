@@ -8,5 +8,5 @@
 import Foundation
 
 protocol RequestService: class {
-    func fetchRepos(query: String, completionHandler: @escaping ([Repo]?) -> Void)
+    func fetchRepos(query: String, completionHandler: @escaping ([Repo]) -> Void)
 }

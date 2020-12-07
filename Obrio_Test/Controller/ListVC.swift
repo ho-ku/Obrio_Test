@@ -36,7 +36,6 @@ extension ListVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text, !text.isEmpty else { return }
         requestService?.fetchRepos(query: text, completionHandler: { [unowned self] repos in
-            guard let repos = repos else { return }
             self.repos = repos
             DispatchQueue.main.async { [unowned self] in
                 self.mainView.updateUI(viewData: ListViewData(repos: self.repos))
